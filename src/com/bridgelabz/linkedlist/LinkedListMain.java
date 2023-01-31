@@ -46,5 +46,17 @@ public class LinkedListMain {
         System.out.println("********** : Display linked list after delete the element : *********");
         linkedList5.deleteLastNode();
         linkedList5.show(); // Display Node Elements
+
+        LinkedList<Integer> linkedList6 = new LinkedList<>();
+        System.out.println("\n********* : Display the Linked List Elements for Search operation : **********");
+        linkedList6.push(70);
+        linkedList6.push(30); // Search a node
+        linkedList6.push(56);
+        linkedList6.show();  // Display Node Elements
+        if (linkedList6.searchNode(30) == null)
+            System.out.println("Searched element not found!!!");
+        else System.out.println("Searched element found! in the Linked List");
+
+
     }
 }
